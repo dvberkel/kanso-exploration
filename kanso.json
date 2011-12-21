@@ -1,0 +1,9 @@
+{
+	"name": "diary-app",
+	"version": "0.0.1",
+	"description": "A means to use couchdb as a diary",
+	"attachments": ["index.html"],
+	"dependencies": {
+		"attachments": null       
+	}
+}
