@@ -3,9 +3,11 @@
 	"version": "0.0.1",
 	"description": "A means to use couchdb as a diary",
 	"attachments": ["index.html"],
-	"modules" : ["lib"],
+	"modules": ["lib"],
+	"load": "lib/app",
 	"dependencies": {
 		"attachments": null,
-		"modules": null       
+		"modules": null,
+		"properties": null     
 	}
 }
