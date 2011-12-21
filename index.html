@@ -1,7 +1,20 @@
 <html>
 	<head>
 		<title>Effrafax &raquo; Diary</title>
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="modules.js"></script>
+		<script type="text/javascript">
+			var db = require("db");
+			$(function(){
+				db.allDbs(function(error, dbs){
+					var ul = $("#databases");
+					for (var index = 0; index < dbs.length; index++) {
+						var d = dbs[index]; 
+						ul.append("<li>" + d + "</li>")
+					}
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<h1>A CouchDB Diary</h1>
@@ -9,5 +22,10 @@
 			var fib = require('lib/fibonacci');
 			console.log(fib.fibonacci(3));
 		</script>
+		<h2>Databases</h2>
+		<p>
+			These database are present on this couchdb.
+			<ul id="databases"></ul>
+		</p>
 	</body>
 </html>

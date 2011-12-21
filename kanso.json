@@ -2,12 +2,13 @@
 	"name": "diary-app",
 	"version": "0.0.1",
 	"description": "A means to use couchdb as a diary",
-	"attachments": ["index.html"],
+	"attachments": ["index.html", "js/jquery.js"],
 	"modules": ["lib"],
 	"load": "lib/app",
 	"dependencies": {
 		"attachments": null,
 		"modules": null,
-		"properties": null     
+		"properties": null,
+		"db": null    
 	}
 }
